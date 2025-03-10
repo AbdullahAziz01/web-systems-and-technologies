@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Queries Practice</title>
+  <style>
+    /* Default Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    .box {
+      background-color: #3498db;
+      color: white;
+      padding: 20px;
+      margin: 10px;
+      width: 30%;
+      text-align: center;
+      border-radius: 8px;
+    }
+
+    /* Media Queries for Different Screen Sizes */
+
+    /* For 480px and below (small mobile screens) */
+    @media (max-width: 480px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .box {
+        width: 90%; /* Increase width for better visibility on small screens */
+        margin: 10px 0;
+      }
+    }
+
+    /* For 768px and below (tablets and small screens) */
+    @media (max-width: 768px) {
+      .box {
+        width: 45%; /* Adjust width to fit two boxes side by side */
+      }
+    }
+
+    /* For 980px and below (larger tablets or small laptops) */
+    @media (max-width: 980px) {
+      .box {
+        width: 30%; /* Keep 3 boxes side by side but adjust slightly */
+      }
+    }
+
+    /* For screens larger than 980px (desktops) */
+    @media (min-width: 981px) {
+      .box {
+        width: 30%; /* Keep the default 3 boxes side by side */
+      }
+    }
+
+    
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+  </div>
+
+</body>
+</html>
+
