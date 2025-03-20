@@ -1,0 +1,28 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Modify Paragraph with JavaScript</title>     <style> 
+        #myParagraph {             padding: 20px; 
+            border: 1px solid black; 
+        } 
+    </style> 
+</head> 
+<body> 
+ 
+    <p id="myParagraph">This is a sample paragraph that will be modified using JavaScript.</p> 
+    <button onclick="toggleParagraph()">Toggle Visibility</button> 
+ 
+    <script> 
+     let paragraph = document.getElementById("myParagraph"); 
+                 paragraph.style.backgroundColor = "orange";            paragraph.style.textAlign = "left";                   paragraph.style.fontSize = "30px";           
+         function toggleParagraph() {             if (paragraph.style.display === "none") {                 paragraph.style.display = "block";  
+            } else {                 paragraph.style.display = "none";   
+            } 
+        } 
+    </script> 
+ 
+</body> 
+</html> 
+ 
