@@ -1,0 +1,15 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Keyboard & Mouse Events</title> 
+    <script>         function logEvent(event) {             document.getElementById("output").innerText = event.type + " event triggered!"; 
+        } 
+    </script> 
+</head> 
+<body> 
+    <input type="text" onkeydown="logEvent(event)" onkeyup="logEvent(event)" onkeypress="logEvent(event)"> 
+    <button onclick="logEvent(event)">Click Me</button> 
+    <p id="output"></p> 
+</body> 
+</html> 
+ 
